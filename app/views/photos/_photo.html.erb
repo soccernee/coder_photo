@@ -1,5 +1,8 @@
 <div class="card photo">
-  <div class="card-header">
+  <div class="card-header clearfix">
+    <div class="avatar">
+      <%= image_tag Faker::Avatar.image(photo.username, '32x32') %>
+    </div>
     <%= photo.username %>
     <span class="timestamp pull-xs-right"><%= time_ago_in_words photo.created_at %></span>
   </div>
@@ -12,4 +15,9 @@
     </div>
     <%= pluralize photo.likes_count, 'like' %>
   </div>
+  <% if photo.comments.size > 0 %>
+    <div class="card-footer">
+      <%= render photo.comments %>
+    </div>
+  <% end %>
 </div>
