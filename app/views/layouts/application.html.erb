@@ -9,14 +9,16 @@
   </head>
 
   <body>
-    <nav class="navbar bg-faded" style="border-radius: 0">
-      <%= link_to "CoderPhoto", root_path, class: 'navbar-brand' %>
-      <ul class="nav navbar-nav">
-        <li class="nav-item active">
-          <%= link_to "Timeline", photos_path, class: 'nav-link' %>
-        </li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav class="navbar bg-faded" style="border-radius: 0">
+        <%= link_to "CoderPhoto", root_path, class: 'navbar-brand' %>
+        <ul class="nav navbar-nav">
+          <li class="nav-item active">
+            <%= link_to "Timeline", photos_path, class: 'nav-link' %>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="container">
       <%= yield %>
     </div>
