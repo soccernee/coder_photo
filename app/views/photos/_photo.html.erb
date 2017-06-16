@@ -4,7 +4,7 @@
       <%= image_tag Faker::Avatar.image(photo.username, '32x32') %>
     </div>
     <%= photo.username %>
-    <span class="timestamp pull-xs-right"><%= time_ago_in_words photo.created_at %></span>
+    <span class="timestamp pull-xs-right"><%= time_ago_in_words(photo.created_at) %></span>
   </div>
   <div class="card-img">
     <%= image_tag photo.url %>
