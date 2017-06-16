@@ -1,24 +1,9 @@
-# README
+Week 1 Lab -- Instagram Clone
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An exercise for students to demonstrate creating a basic Rails app
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Goals: 
+1. Create Photo model
+2. Create a view (using a partial) and a controller for Photos
+3. Seed the database with photos from some resource, using Faker for text
+4. Create Comment model
